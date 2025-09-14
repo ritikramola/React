@@ -4,22 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-        <div id="root"></div>   <!-- this is the root element where we will render our react code-->
-                                    <!--hello world using html-->
+    <div id="root"></div>
+    <!-- this is the root element where we will render our react code-->
+    <!--hello world using html-->
     <!-- <div id="root"></div>
      <h1>Hello World</h1> -->
 
-                                    <!--hello world using javascript-->
-    <!--<div id="root"></div>
-     <script>
-        const heading = document.createElement("h1");
-        heading.innerHTML = "Hello World from JAVASCRIPT!!";
-
-        const root = document.getElementById("root");
-        root.appendChild(heading);
-    </script> -->
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -28,14 +21,6 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script>
-         const heading = React.createElement("h1" , {} , "Hello World from REACT!!");  //  {h1 = element ,{} = object provided with root or attribute, content}
-        const root = ReactDOM.createRoot(document.getElementById("root"));  // creating root using reactDOM
-        root.render(heading);                                                   // rendering heading inside root ,
-
-        // VERY IMPORTANT **React will override the content inside the root element with the content we provide in the render method**.
-
-        
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
