@@ -30,6 +30,7 @@
 
 // TILL HERE SESSION 1 (BASICS OF REACT)
 
+
 //       SESSION 2 (BASICS OF REACT)
 
 
@@ -40,7 +41,7 @@
  * 2. It also takes care of all the different types of files that we have in our project like css,js,html and convert them into a format that can be understood by the browser.
  * 3. It also provides a development server that we can use to run our project locally.
  * 5. It also provides a production build, which means that it will optimize our code for production and create a minified version of our code.
- * Hot module reloading: It is a feature that allows us to see the changes we make in our code immediately in the browser without having to refresh the page.
+ * Hot module replacement: It is a feature that allows us to see the changes we make in our code immediately in the browser without having to refresh the page.
  * file watchers: It is a feature that allows parcel to watch for changes in our files and automatically rebuild the project whenever we make any changes.
  * Bundling - it takes all the different files that we have in our project and bundle them into one single file.
  * Code splitting - it allows us to split our code into different chunks so that we can load only the necessary code when needed.
@@ -59,18 +60,22 @@
  * transitive dependencies - when we install a package, it may have its own dependencies that need to be installed as well
  */
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+// import React from "react";
+// import ReactDOM from "react-dom/client";
 
-const heading = React.createElement("h1", { id: "title" }, "Heading 1");
-const heading2 = React.createElement("h2", { id: "title" }, "Heading 2");
-const container = React.createElement("div", { id: "container" }, [
-  heading,                                //these are children of div (heading,heading2)
-  heading2,
-]);    
+// const heading = React.createElement("h1", { id: "title" }, "Heading 1");
+// const heading2 = React.createElement("h2", { id: "title" }, "Heading 2");
+// const container = React.createElement("div", { id: "container" }, [
+//   heading,                                //these are children of div (heading,heading2)
+//   heading2,
+// ]);    
 
-console.log(heading)
+// console.log(heading)
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"));
 
- root.render(container);  
+//  root.render(container);  
+
+//   TILL HERE SESSION 2 (BASICS OF REACT)
+
+//                                                      SESSION #3 (BASICS OF REACT - JSX)
