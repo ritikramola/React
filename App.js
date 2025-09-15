@@ -59,18 +59,27 @@
  * transitive dependencies - when we install a package, it may have its own dependencies that need to be installed as well
  */
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+// import React from "react";
+// import ReactDOM from "react-dom/client";
 
-const heading = React.createElement("h1", { id: "title" }, "Heading 1");
-const heading2 = React.createElement("h2", { id: "title" }, "Heading 2");
-const container = React.createElement("div", { id: "container" }, [
-  heading,                                //these are children of div (heading,heading2)
-  heading2,
-]);    
+// const heading = React.createElement("h1", { id: "title" }, "Heading 1");
+// const heading2 = React.createElement("h2", { id: "title" }, "Heading 2");
+// const container = React.createElement("div", { id: "container" }, [
+//   heading,                                //these are children of div (heading,heading2)
+//   heading2,
+// ]);    
 
-console.log(heading)
+// console.log(heading)
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"));
 
- root.render(container);  
+//  root.render(container);  
+
+
+//                                      TILL HERE SESSION 2 (BASICS OF REACT)
+
+
+//       SESSION 3 (BASICS OF REACT)
+
+
+

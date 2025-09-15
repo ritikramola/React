@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Complete React",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -20,5 +22,8 @@
     "parcel": "^2.15.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4"
   }
 }
