@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Complete React",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritikramola/React.git"
+  },
+  "author": "Ritik Ramola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritikramola/React/issues"
+  },
+  "homepage": "https://github.com/ritikramola/React#readme",
+  "dependencies": {
+    "install": "^0.13.0",
+    "parcel": "^2.15.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
