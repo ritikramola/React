@@ -704,7 +704,7 @@ try {
  * 2. It also takes care of all the different types of files that we have in our project like css,js,html and convert them into a format that can be understood by the browser.
  * 3. It also provides a development server that we can use to run our project locally.
  * 5. It also provides a production build, which means that it will optimize our code for production and create a minified version of our code.
- * Hot module reloading: It is a feature that allows us to see the changes we make in our code immediately in the browser without having to refresh the page.
+ * Hot module replacement: It is a feature that allows us to see the changes we make in our code immediately in the browser without having to refresh the page.
  * file watchers: It is a feature that allows parcel to watch for changes in our files and automatically rebuild the project whenever we make any changes.
  * Bundling - it takes all the different files that we have in our project and bundle them into one single file.
  * Code splitting - it allows us to split our code into different chunks so that we can load only the necessary code when needed.
@@ -721,24 +721,39 @@ try {
  * 
  * 
  * transitive dependencies - when we install a package, it may have its own dependencies that need to be installed as well
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+ */ // import React from "react";
+// import ReactDOM from "react-dom/client";
+// const heading = React.createElement("h1", { id: "title" }, "Heading 1");
+// const heading2 = React.createElement("h2", { id: "title" }, "Heading 2");
+// const container = React.createElement("div", { id: "container" }, [
+//   heading,                                //these are children of div (heading,heading2)
+//   heading2,
+// ]);    
+// console.log(heading)
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+//  root.render(container);  
+//                                      TILL HERE SESSION 2 (BASICS OF REACT)
+//       SESSION 3 (BASICS OF REACT)
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
-    id: "title"
+    id: "title",
+    key: "h1"
 }, "Heading 1");
 const heading2 = /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {
-    id: "title"
+    id: "title",
+    key: "h2"
 }, "Heading 2");
 const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
     id: "container"
 }, [
     heading,
+    //these are children of div (heading,heading2)
     heading2
 ]);
-console.log(heading);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(container);
 

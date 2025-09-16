@@ -82,4 +82,20 @@
 //       SESSION 3 (BASICS OF REACT)
 
 
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const heading = React.createElement("h1", { id: "title",key: "h1" }, "Heading 1");
+const heading2 = React.createElement("h2", { id: "title", key: "h2" }, "Heading 2");
+const container = React.createElement("div", { id: "container" }, [
+  heading,                                //these are children of div (heading,heading2)
+  heading2,
+]);    
+
+console.log(heading)
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+  root.render(container);  
+
 
