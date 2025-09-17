@@ -85,17 +85,61 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement("h1", { id: "title",key: "h1" }, "Heading 1");
-const heading2 = React.createElement("h2", { id: "title", key: "h2" }, "Heading 2");
-const container = React.createElement("div", { id: "container" }, [
-  heading,                                //these are children of div (heading,heading2)
-  heading2,
-]);    
+// createElement createas a javascript object which then creates the actual DOM element and adds it to the DOM
+// React element is a lightweight representation of a DOM element. It is an object that describes a DOM node and its attributes.
+// React elements are immutable, which means that once they are created, they cannot be changed. If we want to change the content or attributes of a React element, we have to create a new element with the updated content or attributes.\
 
-console.log(heading)
+
+const heading = React.createElement("h1", { id: "title",key: "h1" }, "Heading 1");
+
+//JSX creates a React element which then creates the actual DOM element and adds it to the DOM
+// JSX is a syntax extension for JavaScript that looks similar to HTML. It allows us to write HTML-like code in our JavaScript files, which makes it easier to create and visualize the structure of our UI components.
+// JSX is not a string or HTML. It is a syntax that gets transformed into JavaScript code by a compiler like Babel.
+// Under the hood, JSX is just syntactic sugar for React.createElement() function calls. When we write JSX, it gets compiled into React.createElement() calls that create React elements.
+
+const title = <h1>This is JSX</h1>
+
+// This is a functional component
+// A functional component is a JavaScript function that returns a React element (JSX). It is a simple and concise way to define a component in React.
+// Functional components are also known as stateless components because they do not have their own state. They receive data and behavior through props (properties) passed down from their parent component.
+// Functional components are easier to read and understand than class components, especially for simple components that do not require state or lifecycle methods.
+// Functional components can also use hooks, which are special functions that allow us to use state and other React features in functional components.
+const HeaderComponent = () => {
+  return ( <div><h1>This is React code</h1>
+  <h2> This is function</h2>
+  </div>
+  )
+}  
+//OR both above and below are same (without return statement)
+
+// const HeaderComponent2 = () => (
+//   <div><h1>This is React code</h1>
+//   <h2> This is function</h2>
+//   </div>
+// )
+
+// How to use an element or component inside another component
+
+const HeaderComponent1 = () => {
+  return (
+  <div>
+    {title}  
+    <h1>This is React code</h1>
+    <h2> This is function</h2>
+  </div>
+  )
+}  
+
+
+
+console.log(HeaderComponent1)  // it will return a function
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-  root.render(container);  
+  root.render(HeaderComponent1());  // it will return a react element which will be rendered to the DOM
+  // OR
+// root.render(<HeaderComponent/>);  // it will return a react element which will be rendered to the DOM
 
 
+
+ 
