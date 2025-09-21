@@ -82,34 +82,38 @@
 //       SESSION 3 (BASICS OF REACT)
 
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+// import React from "react";             1
+// import ReactDOM from "react-dom/client";       2
 
 // createElement createas a javascript object which then creates the actual DOM element and adds it to the DOM
 // React element is a lightweight representation of a DOM element. It is an object that describes a DOM node and its attributes.
 // React elements are immutable, which means that once they are created, they cannot be changed. If we want to change the content or attributes of a React element, we have to create a new element with the updated content or attributes.\
 
 
-const heading = React.createElement("h1", { id: "title",key: "h1" }, "Heading 1");
+//const heading = React.createElement("h1", { id: "title",key: "h1" }, "Heading 1");      3
 
 //JSX creates a React element which then creates the actual DOM element and adds it to the DOM
 // JSX is a syntax extension for JavaScript that looks similar to HTML. It allows us to write HTML-like code in our JavaScript files, which makes it easier to create and visualize the structure of our UI components.
 // JSX is not a string or HTML. It is a syntax that gets transformed into JavaScript code by a compiler like Babel.
 // Under the hood, JSX is just syntactic sugar for React.createElement() function calls. When we write JSX, it gets compiled into React.createElement() calls that create React elements.
 
-const title = <h1>This is JSX</h1>
+//const title = <h1>This is JSX</h1>    4
 
 // This is a functional component
 // A functional component is a JavaScript function that returns a React element (JSX). It is a simple and concise way to define a component in React.
 // Functional components are also known as stateless components because they do not have their own state. They receive data and behavior through props (properties) passed down from their parent component.
 // Functional components are easier to read and understand than class components, especially for simple components that do not require state or lifecycle methods.
 // Functional components can also use hooks, which are special functions that allow us to use state and other React features in functional components.
-const HeaderComponent = () => {
-  return ( <div><h1>This is React code</h1>
-  <h2> This is function</h2>
-  </div>
-  )
-}  
+
+
+// const HeaderComponent = () => {   5
+//   return ( <div><h1>This is React code</h1>   6
+//   <h2> This is function</h2>     7
+//   </div>     8
+//   )     9
+// }     10
+
+
 //OR both above and below are same (without return statement)
 
 // const HeaderComponent2 = () => (
@@ -120,26 +124,30 @@ const HeaderComponent = () => {
 
 // How to use an element or component inside another component
 
-const HeaderComponent1 = () => {
-  return (
-  <div>
-    {title}  
-    <h1>This is React code</h1>
-    <h2> This is function</h2>
-  </div>
-  )
-}  
+
+
+// const HeaderComponent1 = () => {         11
+//   return (             12
+//   <div>                13  
+//     {title}            14
+//     <h1>This is React code</h1>            15
+//     <h2> This is function</h2>           16
+//   </div>        17   
+//   )          18
+// }          19
 
 
 
-console.log(HeaderComponent1)  // it will return a function
+// console.log(HeaderComponent1)  // it will return a function          20
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"));         21
 
-  root.render(HeaderComponent1());  // it will return a react element which will be rendered to the DOM
+//   root.render(HeaderComponent1());  // it will return a react element which will be rendered to the DOM        22
   // OR
 // root.render(<HeaderComponent/>);  // it will return a react element which will be rendered to the DOM
 
 
 
- 
+ //                                    TILL HERE SESSION 3 (BASICS OF REACT)
+
+//       SESSION 4 (BASICS OF REACT)
