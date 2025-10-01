@@ -28,6 +28,8 @@ JSX - jsx is html likes and tags *not* html inside javascript
 
 #### BABEL
 
+Babel is a compiler or transpiler
+
 babel takes this jsx code and give us react code  using ast spec (ABSTRACT SYNTAX TREE) other algos.
 
 babel comes along with parcel.
@@ -50,6 +52,7 @@ const HeaderComponent = () => {
   )
 }
 
+
 #### How to use react component inside any component (function) called Component Composition
 
 const HeaderComponent = () => {
@@ -67,4 +70,64 @@ JSX uses SANITIZATION to save us from getting hacked.
 
 JAR GUN - is component composition
 
+### Session 4
 
+Is jsx mandatory -  NO , typescript - no , es6 - No
+
+
+This will give error as we can only have one parent {header,body and footer giving error}
+const AppLayout = () => {
+  return (
+  <>
+    <Header/>
+     <Body/>
+    <Footer/> 
+ </>
+  );
+};
+
+<>  </> these are called **React fragment** 
+
+Wht is react fragment ? wht does it do ? and why is it needed ?
+react.fragment is a componenet imported by react and is used as component inside react
+const AppLayout = () => {
+  return (
+  <React.Fragment>
+    <Header/>
+     <Body/>
+    <Footer/> 
+ <React.Fragment/>
+  );
+};
+
+WHy is it needed ? As JSX can only have one parent so to get 2 or more parents we use **REACT.FRAGMENT**
+
+we can use it as **<> </>** OR emptytag
+
+with this we can't use css  BUT for that we have inline styling in react , How we do it ?
+
+const styleObj = () = {
+    background-color : "red",
+  };
+
+
+const AppLayout = () => (
+  <div style = {styleObj}>
+    <Header/>
+     <Body/>
+    <Footer/> 
+ <div/>
+);
+
+Can we use react.fragment inside react.fragment
+Yes, it is possible to use a React Fragment inside another React Fragment. React Fragments are primarily used to group multiple elements without adding an extra node to the DOM. This can be useful for various reasons, such as when returning multiple elements from a component or when working with lists and tables. 
+
+
+We make our UI dynamic which is called as **CONFIG DRIVEN UI**
+
+for example : carousel is showing for some location and for some it is not as there are no offers there.
+backend make changes in api depending on the place the app is being used.
+
+OPTIONAL CHAINING:  Optional chaining ( ?. ) in React, as in general JavaScript, is a syntax feature that allows you to safely access nested object properties or call methods when intermediate properties might be null or undefined. It prevents your application from crashing due to attempting to access a property of a null or undefined value.  
+
+React wraps up all the argument in one property and pass in params as single property called props.

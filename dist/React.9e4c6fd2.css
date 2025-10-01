@@ -1,4 +1,38 @@
-#container {
-  background-color: #7fffd4;
+.header {
+  border: 2px solid #000;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.nav-items {
+  gap: 20px;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.card {
+  border: 1px solid #000;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.body {
+  flex-wrap: wrap;
+  display: flex;
 }
 /*# sourceMappingURL=React.9e4c6fd2.css.map */
