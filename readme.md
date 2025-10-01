@@ -136,6 +136,7 @@ Execute your code only after the DOM has `initialized`, which makes DOM manipula
 Prevent top level variables from implicitly polluting the global namespace.<br/>
 Allow you to use top-level await in supported engines.<br/>
 Load and parse your code `asynchronously`, which improves load performance.
+<<<<<<< Updated upstream
 
 
 # _Episode 02 - Igniting our App_
@@ -523,3 +524,5 @@ Component Composition refers to the process of nesting multiple components insid
 - Class components are still used but less frequently since **Hooks** have made functional components more powerful.<br/>
 - Both types of components return React elements (JS objects that describe the UI) and accept `props`.<br/>
 - JSX is the preferred way of writing React elements, but it gets converted to `React.createElement()` under the hood.<br/>
+=======
+>>>>>>> Stashed changes
