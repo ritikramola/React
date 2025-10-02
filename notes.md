@@ -131,3 +131,19 @@ backend make changes in api depending on the place the app is being used.
 OPTIONAL CHAINING:  Optional chaining ( ?. ) in React, as in general JavaScript, is a syntax feature that allows you to safely access nested object properties or call methods when intermediate properties might be null or undefined. It prevents your application from crashing due to attempting to access a property of a null or undefined value.  
 
 React wraps up all the argument in one property and pass in params as single property called props.
+
+
+#### VIRTUAL DOM
+
+Virtual dom is concept we keep a representation of DOM with us is called Virtual dom.
+We need it for **RECONCIALIATION** => is an algo that react uses to diff one tree from other and it determines wht needs to be updated and just re-rendered small portion of project.\
+
+WHY WE USE KEY ? with the help of key react knows wht needs to be rerendered.
+
+React Fiber =>  It is a fundamental change to React's internal architecture, designed to improve the rendering process and enable new features like asynchronous rendering and concurrent mode. 
+
+In essence, React Fiber transforms React's rendering from a largely synchronous, all-or-nothing process into an asynchronous, interruptible, and prioritized system, leading to a more performant and fluid user experience.
+
+
+Why don't we use index as a key ?
+Index us a valid key but we never use index as a key as if the order of the index changes it will negatively impact our project

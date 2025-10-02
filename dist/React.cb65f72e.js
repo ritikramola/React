@@ -1604,11 +1604,11 @@ const Body = ()=>{
             restaurantList.map((restaurant)=>{
                 return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
                     ...restaurant.info
-                }, "one", false, {
+                }, restaurant.info.id, false, {
                     fileName: "App.js",
                     lineNumber: 829,
                     columnNumber: 14
-                }, undefined);
+                }, undefined); // key is used to uniquely identify each card (helps in optimization of rendering by react
             }),
             ";"
         ]

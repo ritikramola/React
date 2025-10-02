@@ -921,7 +921,7 @@ const Body = () =>{
   <div className="body">
     {
       restaurantList.map((restaurant) =>{
-        return <RestaurantCard key={"one"}{...restaurant.info} />;
+        return <RestaurantCard key={restaurant.info.id}{...restaurant.info} />;  // key is used to uniquely identify each card (helps in optimization of rendering by react
       })};
    </div>
   );
